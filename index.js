@@ -10,7 +10,7 @@ http.createServer((req, res) => {
 function createBot() {
     const bot = mineflayer.createBot({
         host: 'SimsekOriginal.aternos.me',
-        port: 25565,
+        port: 63781,
         username: 'SimsekOriginalBot'
     });
 
