@@ -1,18 +1,19 @@
 const mineflayer = require('mineflayer');
 const http = require('http');
 
-// Render kapanmasın diye web portu
 http.createServer((req, res) => {
     res.write("Bot 7/24 Aktif!");
     res.end();
 }).listen(process.env.PORT || 3000);
 
 function createBot() {
+    console.log('Sunucuya bağlanılıyor...');
+
     const bot = mineflayer.createBot({
         host: 'SimsekOriginal.aternos.me',
-        port: 63781,
+        port: 63781, // Aternos dinamik Java portu
         username: 'SimsekOriginalBot',
-        version: false, // Sunucunun sürümünü otomatik algılar
+        version: false, // Geyser/ViaVersion otomatik sürüm eşleme
         checkTimeoutInterval: 60 * 1000
     });
 
