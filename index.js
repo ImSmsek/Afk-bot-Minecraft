@@ -10,7 +10,7 @@ function createBot() {
     console.log('Sunucuya bağlanılıyor...');
 
     const bot = mineflayer.createBot({
-        host: 'SimsekOriginal.aternos.me',
+        host: 'SimsekOriginal.aternos.me:63781',
         port: 63781, // Aternos dinamik Java portu
         username: 'SimsekOriginalBot',
         version: false, // Geyser/ViaVersion otomatik sürüm eşleme
