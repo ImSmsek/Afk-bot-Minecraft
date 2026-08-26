@@ -5,8 +5,8 @@ function createBot() {
 
     const bot = mineflayer.createBot({
         host: 'SimsekOriginal.aternos.me',
-        username: 'SimsekOriginalBot',
-        version: '1.21.1'
+        username: 'ImSmsek3',
+        version: '1.21.10'
     });
 
     bot.on('spawn', () => {
